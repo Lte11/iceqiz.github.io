@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120b18">
+  <title>Для тебя ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="password-screen" id="passwordScreen">
+    <div class="password-card">
+      <div class="lock">♡</div>
+      <div class="eyebrow">маленький секрет</div>
+      <h2>Это только для тебя</h2>
+      <p>Введи пароль, чтобы открыть подарок. Я конечно же его не знаю но вдруг какая то дата подойдет.</p>
+      <form id="passwordForm">
+        <input id="passwordInput" type="password" inputmode="numeric" maxlength="8" placeholder="••••••••" autocomplete="off">
+        <button class="btn primary" type="submit">Открыть ❤️</button>
+        <div class="password-error" id="passwordError">Неверный пароль. Попробуй ещё раз ❤️Скорее всего нужно ввести полную дату)</div>
+      </form>
+    </div>
+  </div>
+
+  <div id="hearts"></div>
+  <div id="confetti"></div>
+
+  <main>
+    <section class="screen hero" id="start">
+      <div class="noise"></div>
+      <div class="orb orb-a"></div><div class="orb orb-b"></div>
+      <div class="hero-content reveal">
+        <div class="eyebrow">маленький подарок для тебя</div>
+        <h1>С днём рождения,<br><span data-name>Пупс</span> ❤️</h1>
+        <p class="lead">Я сделал для тебя кое-что особенное.<br>Не спеши. Здесь всё — только для тебя.</p>
+        <div class="scroll-hint">листай вниз</div>
+      </div>
+    </section>
+	
+	<section class="memory-timer">
+  <div class="memory-timer-card">
+    <div class="memory-timer-label">Мы вместе уже</div>
+
+    <div class="memory-timer-values">
+      <div>
+        <span id="years">0</span>
+        <small>лет</small>
+      </div>
+
+      <div>
+        <span id="days">0</span>
+        <small>дней</small>
+      </div>
+
+      <div>
+        <span id="hours">0</span>
+        <small>часов</small>
+      </div>
+
+      <div>
+        <span id="minutes">0</span>
+        <small>минут</small>
+      </div>
+
+      <div>
+        <span id="seconds">0</span>
+        <small>секунд</small>
+      </div>
+    </div>
+
+    <div class="memory-timer-text">
+      И каждую секунду я люблю тебя ещё немного сильнее ❤️
+    </div>
+  </div>
+</section>
+
+    <section class="section story-section">
+      <div class="section-inner">
+        <div class="eyebrow">глава первая</div>
+        <h2>Наша маленькая история</h2>
+        <p class="section-sub">Некоторые моменты хочется сохранить навсегда.</p>
+        <div class="timeline">
+          <article class="timeline-card reveal">
+            <div class="date">01</div>
+				<button class="photo-card tall reveal" data-src="images/moment.jpg"><img src="images/moment.jpg" alt=""><span></span></button>
+          </article>
+		  <div><h3>ㅤㅤㅤ❤️06.09.2025❤️ Эта дата для меня особенная.</h3><p></p></div>
+          <article class="timeline-card reveal">
+            <div class="date">02</div>
+				<button class="photo-card tall reveal" data-src="images/moment2.jpg"><img src="images/moment2.jpg" alt="Наше фото 2"><span></span></button>
+			</article>
+            <div><h3>ㅤㅤㅤ❤️25.01.2026❤️ Эту дату я никогда не забуду.</h3><p></p></div>
+          </article>
+          <article class="timeline-card reveal">
+            <div class="date">03</div>
+			<button class="photo-card tall reveal" data-src="images/moment3.jpg"><img src="images/moment3.jpg" alt="Наше фото 2"><span></span></button>
+			</article>
+            <div><h3>ㅤㅤㅤ❤️28.09.2006❤️ А эта дата моей любимой.</h3><p></p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="section-inner">
+        <div class="eyebrow">фоточки</div>
+        <h2>Масипусик</h2>
+        <p class="section-sub">Ну как не любить такого <b>Пупса</b></p>
+        <div class="gallery">
+          <button class="photo-card tall reveal" data-src="assets/photo1.jpg"><img src="assets/photo1.jpg" alt="Наше фото 1"><span>момент #1</span></button>
+          <button class="photo-card reveal" data-src="assets/photo2.jpg"><img src="assets/photo2.jpg" alt="Наше фото 2"><span>момент #2</span></button>
+          <button class="photo-card reveal" data-src="assets/photo3.jpg"><img src="assets/photo3.jpg" alt="Наше фото 3"><span>момент #3</span></button>
+          <button class="photo-card reveal" data-src="assets/photo4.jpg"><img src="assets/photo4.jpg" alt="Наше фото 4"><span>момент #4</span></button>
+          <button class="photo-card tall reveal" data-src="assets/photo5.jpg"><img src="assets/photo5.jpg" alt="Наше фото 5"><span>момент #5</span></button>
+          <button class="photo-card reveal" data-src="assets/photo6.jpg"><img src="assets/photo6.jpg" alt="Наше фото 6"><span>момент #6</span></button>
+		  <button class="photo-card reveal video-card"
+        type="button"
+        data-type="video"
+        data-src="assets/video1.mp4">
+
+  <video
+    src="assets/video1.mp4"
+    autoplay
+    muted
+    loop
+    playsinline>
+  </video>
+
+  <span>наш момент ❤️</span>
+
+</button>
+        </div>
+      </div>
+	</section>
+	
+
+
+<div class="hug-overlay" id="hugOverlay"></div>
+<div class="hug-hearts" id="hugHearts"></div>
+	
+
+    <section class="section reasons-section">
+      <div class="section-inner">
+        <div class="eyebrow">только между нами</div>
+        <h2>Почему я люблю тебя</h2>
+        <div class="reasons-grid">
+          <div class="reason reveal"><span>01</span><h3>За твою улыбку</h3><p>Потому что она каким-то невероятным образом делает мой день лучше.</p></div>
+          <div class="reason reveal"><span>02</span><h3>За то, какая ты</h3><p>Мне нравится именно ты — настоящая, со всеми своими привычками, мечтами и маленькими странностями.</p></div>
+          <div class="reason reveal"><span>03</span><h3>За наши разговоры</h3><p>Даже обычный вечер рядом с тобой почему-то становится особенным.</p></div>
+          <div class="reason reveal"><span>04</span><h3>За чувство дома</h3><p>Рядом с тобой мне спокойно. И это одно из самых ценных чувств.</p></div>
+          <div class="reason reveal"><span>05</span><h3>За наши моменты</h3><p>Из них постепенно складывается история, которую я ни на что не променяю.</p></div>
+          <div class="reason reveal"><span>06</span><h3>И просто за тебя</h3><p>Иногда не нужен список причин. Мне просто очень повезло встретить тебя.</p></div>
+        </div>
+      </div>
+    </section>
+	
+<!-- =========================
+     ОБНИМАШКА
+========================= -->
+
+<section class="section hug-section">
+
+  <div class="section-inner center">
+
+    <div class="eyebrow">маленький подарок 🫶</div>
+
+    <h2>Хочешь обнимашку?</h2>
+
+    <p class="section-sub">
+      Нажми на кнопку ❤️
+    </p>
+
+    <button class="hug-btn" id="hugBtn" type="button">
+      🫂 Получить обнимашку
+    </button>
+
+    <div class="hug-progress-box" id="hugProgressBox">
+
+      <div class="hug-status" id="hugStatus">
+        Обнимаю тебя... 🫂
+      </div>
+
+      <div class="hug-progress">
+        <div
+          class="hug-progress-fill"
+          id="hugProgressFill">
+        </div>
+      </div>
+
+      <div class="hug-progress-text" id="hugProgressText">
+        0%
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ПОЛНОЭКРАННАЯ ОБНИМАШКА
+========================= -->
+
+<div class="hug-screen" id="hugScreen">
+
+  <div class="hug-glow"></div>
+
+  <!-- Левая рука -->
+  <div class="hug-arm hug-arm-left">
+    🫂
+  </div>
+
+  <!-- Правая рука -->
+  <div class="hug-arm hug-arm-right">
+    🫂
+  </div>
+
+  <!-- Сердце -->
+  <div class="hug-big-heart">
+    ❤️
+  </div>
+
+  <!-- Текст -->
+  <div class="hug-screen-text">
+    Обнимаю тебя
+    <span>крепко-крепко ❤️</span>
+  </div>
+
+  <div id="hugHeartContainer"></div>
+
+</div>
+
+	
+	<section class="section gallery-section">
+      <div class="section-inner">
+        <div class="eyebrow">видосики</div>
+        <h2>Ох уж эта тик ток няшка</h2>
+        <p class="section-sub">Грация <b>кошки</b></p>
+        <div class="moments-grid">
+		  <div class="moment" data-type="video" data-src="assets/vid1.mp4"><video src="assets/vid1.mp4" autoplay muted loop playsinline></video><span>2</span></div>
+          <div class="moment" type="button" data-type="video" data-src="assets/vid3.mp4"><video src="assets/vid3.mp4" autoplay muted loop playsinline></video><span>2</span></div>
+          <div class="moment" type="button" data-type="video" data-src="assets/vid4.mp4"><video src="assets/vid4.mp4" autoplay muted loop playsinline></video><span>2</span></div>
+          <div class="moment" type="button" data-type="video" data-src="assets/vid5.mp4"><video src="assets/vid5.mp4" autoplay muted loop playsinline></video><span>2</span></div>
+          <div class="moment" type="button" data-type="video" data-src="assets/vid2.mp4"><video src="assets/vid2.mp4" autoplay muted loop playsinline></video><span>2</span></div>
+          <div class="moment" type="button" data-type="video" data-src="assets/vid6.mp4"><video src="assets/vid6.mp4" autoplay muted loop playsinline></video><span>2</span></div>
+        </div>
+      </div>
+	</section>
+
+    <!-- =========================
+         СЛУЧАЙНЫЕ КРУЖОЧКИ
+    ========================= -->
+    <section class="section telegram-circles-section" id="telegramCircles">
+      <div class="section-inner center">
+        <div class="eyebrow">маленький сюрприз</div>
+        <h2>Кружочек для тебя 💌</h2>
+        <p class="section-sub">Нажми кнопку — и я случайно выберу один из моих кружочков.</p>
+
+        <div class="telegram-circle-wrap">
+          <video id="telegramCircleVideo" class="telegram-circle-video" playsinline preload="metadata"></video>
+          <div class="telegram-circle-placeholder" id="telegramCirclePlaceholder">
+            <span>💗</span>
+            <small>Здесь появится кружочек</small>
+          </div>
+        </div>
+
+        <div class="telegram-circle-number" id="telegramCircleNumber"></div>
+
+        <button class="hug-btn telegram-circle-btn" id="telegramCircleBtn" type="button">
+          🎲 Включить случайный кружочек
+        </button>
+      </div>
+    </section>
+
+    <section class="section letter-section">
+      <div class="letter-wrap reveal">
+        <div class="eyebrow">для тебя</div>
+        <h2>Письмо, которое я хотел тебе сказать</h2>
+        <div class="letter" id="letter">
+          <p>Любимая,</p>
+          <p>сегодня твой день, и мне хочется, чтобы ты знала одну простую вещь: я очень рад, что именно ты появилась в моей жизни.</p>
+          <p>Спасибо тебе за смех, за разговоры, за поддержку и даже за те моменты, когда мы просто молчим рядом.</p>
+          <p>Я хочу, чтобы впереди у тебя было как можно больше счастливых дней, исполнения желаний и людей, рядом с которыми тебе хорошо.</p>
+          <p>А я очень хочу быть рядом и добавлять к этому счастью что-то своё.</p>
+          <p class="signature">Люблю тебя. ❤️<br><span>Вовчик</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cake-section" id="surprise">
+      <div class="section-inner center">
+        <div class="eyebrow">самое важное</div>
+        <h2>Загадай желание 🎂</h2>
+        <p class="section-sub">Нажми на огонёк, когда будешь готова.</p>
+        <div class="cake">
+          <div class="flames">
+            <button class="flame" aria-label="Погасить свечу">🔥</button>
+            <button class="flame" aria-label="Погасить свечу">🔥</button>
+            <button class="flame" aria-label="Погасить свечу">🔥</button>
+          </div>
+          <div class="candles"><i></i><i></i><i></i></div>
+          <div class="icing"></div>
+          <div class="cake-body"><span>❤️</span><span>❤️</span><span>❤️</span></div>
+          <div class="plate"></div>
+        </div>
+        <button class="btn primary hidden" id="finalBtn">У меня есть ещё кое-что →</button>
+      </div>
+    </section>
+
+    <section class="final-screen" id="final">
+      <div class="final-stars"></div>
+      <div class="final-content">
+        <div class="big-heart">♥</div>
+        <div class="eyebrow">и последнее</div>
+        <h2>Я люблю тебя,<br><span data-name>Любимая</span>.</h2>
+        <p>С днём рождения.<br>Пусть этот год будет невероятным. А я постараюсь сделать его ещё немного счастливее.</p>
+      </div>
+    </section>
+	
+<section class="section love-choice-section">
+  <div class="section-inner center">
+
+<div class="eyebrow">маленький вопрос</div>
+
+<h2>Ты меня любишь?</h2>
+
+<p class="section-sub">
+  Только честно... ❤️
+</p>
+
+<div class="love-choice" id="loveChoice">
+
+  <button class="btn primary love-btn" id="loveBtn" type="button">
+    Я тебя люблю ❤️
+  </button>
+
+  <button class="btn no-love-btn" id="noLoveBtn" type="button">
+    Неа(
+  </button>
+
+</div>
+
+<p class="no-love-message" id="noLoveMessage"></p>
+
+  </div>
+</section>
+
+<!-- =========================
+     ФОТО + ТЕКСТ
+========================= -->
+
+<section class="section photo-story-section">
+
+  <div class="section-inner">
+
+    <div class="photo-story reveal">
+
+      <div class="photo-story-image">
+        <img
+          src="assets/photo-love.jpg"
+          alt="Наш особенный момент"
+        >
+      </div>
+
+      <div class="photo-story-content">
+
+        <div class="eyebrow">
+          спасибо за все эти часы ❤️
+        </div>
+
+        <h2>
+          Спасибо за каждую минуту<br>
+          которую мы провели вместе, я ценю кажду из них.
+        </h2>
+
+        <div class="photo-story-line"></div>
+
+        <div class="photo-story-signature">
+          
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+  </main>
+
+  <div class="music-control" id="musicControl">
+    <button id="musicBtn" aria-label="Музыка">♫</button>
+    <span id="musicLabel">включить музыку</span>
+    <audio id="music" loop src="assets/music.mp3"></audio>
+  </div>
+
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose">×</button>
+    <img id="modalImg" src="" alt="Фото">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
